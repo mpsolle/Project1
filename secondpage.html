@@ -1,1 +1,80 @@
-<p> mpsolle@unca.edu </p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>What's hot in music?</title>
+	<link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css"> 
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-modal.js"></script>
+    <script>
+$(document).ready(function() {
+  $("#modal-from-dom").bind('show', function() {
+    var name = $("#name").val();
+    $("#name_header").text("You entered: " + name);
+  });
+});
+    </script>
+
+  </head>
+
+  <body>
+    <div id="modal-from-dom" class="modal hide fade">
+      <div class="modal-header">
+        <a href="#" class="close">&times;</a>
+        <h3 id="name_header"></h3>
+      </div>
+
+      <div class="modal-body">
+        <p><b>Is that right?</b></p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn primary">Yes</a>
+        <a href="#" class="btn secondary">No</a>
+      </div>
+    </div>
+
+    <div class="container">		
+		<div class="header">
+			<div class="row">
+				<div class="span6">
+					<label>Username:</label>
+					<input id="name" type="text"/>
+						<button data-controls-modal="modal-from-dom"
+						data-backdrop="true"
+						data-keyboard="true"
+						class="btn btn-primary">Login</button>
+				</div>
+				<div class="span3 offset3">
+					    <ul class="nav nav-pills">
+						<li><a href="mainpage.html">Home</a></li>
+						<li><a href="#">My Account</a></li>
+						<li class="active">
+						<a href="#">Help</a>
+						</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class ="main">
+			<div class="row">
+				<div class="span 6 offset6">
+					Email me at mpsolle@unca.edu
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<div class="footer">
+			<div class="row">
+				<div class="span10 offset3">
+					<a href="secondpage.html">Contact Owner</a> 
+				</div>
+			</div>
+		</div>
+		
+  </body>
+
+</html>
