@@ -1,9 +1,15 @@
 .header
 {
+font-family:"Times New Roman", Times, serif;
 background:	#E0E0E0  ;
 } 
 
 .container
 {
 background:#CCCCCC ;
+}
+
+.main
+{
+font-family:"Times New Roman", Times, serif;
 }
