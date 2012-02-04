@@ -2,15 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Modal Example</title>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">    
+    <title>What's hot in music?</title>
+	<link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css"> 
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-modal.js"></script>
     <script>
 $(document).ready(function() {
   $("#modal-from-dom").bind('show', function() {
     var name = $("#name").val();
-    $("#name_header").text("Hello, " + name);
+    $("#name_header").text("You entered: " + name);
   });
 });
     </script>
@@ -27,29 +29,45 @@ $(document).ready(function() {
       </div>
 
       <div class="modal-body">
-        <p>One fine body…</p>
+        <p><b>Is that right?</b></p>
       </div>
       <div class="modal-footer">
-        <a href="#" class="btn primary">Primary</a>
-        <a href="#" class="btn secondary">Secondary</a>
+        <a href="#" class="btn primary">Yes</a>
+        <a href="#" class="btn secondary">No</a>
       </div>
 
     </div>
 
     <div class="container">
-		<div id="header">
-		<div id="span4">
-      <label>Tell me your name:</label>
-      <input id="name" type="text"/>
-      <button data-controls-modal="modal-from-dom"
-	      data-backdrop="true"
-	      data-keyboard="true"
-	      class="btn danger">Click Me</button>
-		  </div>
-		  <div id="span8">
-		  </div>
+		
+		<div class="header">
+			<div class="row">
+				<div class="span6">
+					<label>Username:</label>
+					<input id="name" type="text"/>
+						<button data-controls-modal="modal-from-dom"
+						data-backdrop="true"
+						data-keyboard="true"
+						class="btn btn-primary">Login</button>
+				</div>
+				<div class="span3 offset3">
+					    <ul class="nav nav-pills">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Help</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class ="body">
+			<div class="row">
+				<div class="span10">
+					<img src="http://upload.wikimedia.org/wikipedia/commons/b/b3/The_Sphere.jpg" alt="Pulpit rock" width="600" height="600" /> 
+	
 	</div>
-    </div>
   </body>
 
 </html>

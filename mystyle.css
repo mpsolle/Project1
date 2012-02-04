@@ -1,6 +1,9 @@
-#header
+.header
 {
-background:#008080 ;
+background:	#E0E0E0  ;
 } 
 
-#
+.container
+{
+background:#CCCCCC ;
+}
